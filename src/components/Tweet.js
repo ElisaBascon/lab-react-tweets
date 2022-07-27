@@ -1,7 +1,17 @@
-function Tweet() {
+import React from "react";
+import Actions from "../components/Actions.jsx";
+import Message from "../components/Message.jsx";
+import ProfileImage from "../components/ProfileImage.jsx";
+import Timestamp from "../components/Timestamp.jsx";
+import User from "../components/User.jsx";
+
+
+function Tweet(props) {
   return (
+    
     <div className="tweet">
-      <img
+  
+      <img 
         src="https://i.imgur.com/9yw1Fyw.jpg"
         className="profile"
         alt="profile"
@@ -21,7 +31,7 @@ function Tweet() {
           On December 7th, we will be hosting a #webinar that will introduce you
           to #SQL! Are you ready? 🚀
         </p>
-
+ 
         <div className="actions">
           {/* Font Awesome icons */}
           <i class="far fa-comment"></i>
